@@ -8,5 +8,4 @@ public interface Actinoide extends Element {
    default String getGroupName() {
       return Actinoide.class.getSimpleName();
    }
-
 }

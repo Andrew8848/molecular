@@ -12,7 +12,7 @@ public interface Element {
 	}
 	
 	default public String elementToString() {
-		return getGroupName() + " " + this.getClass().getSimpleName() +
+		return getGroupName() + " "+ this.getClass().getSimpleName() +
 				": Nuclear Charge: " + getNuclearCharge() +
 				"; Atomic Mass: " + getAtomicMass() +
 				"; Number of Neutrons: " + getNeutroneNumber();
