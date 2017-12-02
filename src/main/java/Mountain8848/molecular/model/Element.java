@@ -9,6 +9,8 @@ public interface Element {
 		return neutroneNumber;
 	}
 	
+	
+	
 	default public String elementToString() {
 		return "Element "+ this.getClass().getSimpleName() +
 				": Nuclear Charge: " + getNuclearCharge() +
