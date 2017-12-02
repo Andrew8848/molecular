@@ -4,6 +4,8 @@ public interface Element {
  
 	int getNuclearCharge();
 	double getAtomicMass();
+	String getGroupName();
+	
 	default public int getNeutroneNumber() {
 		int neutroneNumber = (int) Math.round(getAtomicMass()) - getNuclearCharge();
 		return neutroneNumber;
@@ -12,7 +14,7 @@ public interface Element {
 	
 	
 	default public String elementToString() {
-		return "Element "+ this.getClass().getSimpleName() +
+		return getGroupName() + " "+ this.getClass().getSimpleName() +
 				": Nuclear Charge: " + getNuclearCharge() +
 				"; Atomic Mass: " + getAtomicMass() +
 				"; Number of Neutrons: " + getNeutroneNumber();
