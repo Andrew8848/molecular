@@ -1,10 +1,10 @@
 package Mountain8848.molecular;
 
 import Mountain8848.molecular.model.Element;
-import Mountain8848.molecular.model.actinoide.*;
-import Mountain8848.molecular.model.alkalimetals.*;
-import Mountain8848.molecular.model.nometals.*;
-import Mountain8848.molecular.model.transitionmetals.*;
+import Mountain8848.molecular.model.element.actinoide.*;
+import Mountain8848.molecular.model.element.alkalimetals.*;
+import Mountain8848.molecular.model.element.nometals.*;
+import Mountain8848.molecular.model.element.transitionmetals.*;
 
 public class Main {
 
