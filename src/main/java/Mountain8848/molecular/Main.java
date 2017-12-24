@@ -1,20 +1,22 @@
 package Mountain8848.molecular;
 
-import Mountain8848.molecular.model.Element;
-import Mountain8848.molecular.model.element.actinoide.*;
-import Mountain8848.molecular.model.element.alkalimetals.*;
-import Mountain8848.molecular.model.element.nometals.*;
-import Mountain8848.molecular.model.element.transitionmetals.*;
+import java.util.List;
+
+import Mountain8848.molecular.model.atom.Atom;
+import Mountain8848.molecular.model.atom.Shell;
 
 public class Main {
 
 	public static void main(String[] args) {
-
-		Element[] elements = new Element [] {new H(), new C(), new Fe(), new Au(), new Th(), new U(), new Pl(), new Li()};
-		
-		for (int i = 0; i < elements.length; i++) {
-			System.out.println(elements[i].elementToString());
-		}
+	   Atom myAtom = new Atom(5);
+	   List<Shell> shells = myAtom.getShells();
+	   printShells(shells);
 	}
+
+   private static void printShells(List<Shell> shells)
+   {
+      // TODO Auto-generated method stub
+      
+   }
 
 }

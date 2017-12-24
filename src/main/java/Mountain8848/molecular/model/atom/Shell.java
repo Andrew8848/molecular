@@ -5,21 +5,30 @@ import java.util.List;
 
 public class Shell
 {
+   public static final int MAX_SUBSHELLS = 4;
+   
    private int index;
-   private List<Subshell> subshells = new ArrayList<Subshell>();
+   private List<Subshell> subshells;
    
    public Shell(int index)
    {
       this.index = index;
+      subshells = calculateSubshells();
    }
-   
-   public int getIndex()
+
+   private List<Subshell> calculateSubshells()
    {
-      return index;
+      subshells = new ArrayList<>();
+      for (int i = 0; i < index && i < MAX_SUBSHELLS; i++)
+      {
+         Subshell currentSubshell = new Subshell();
+         subshells.add(currentSubshell);
+      }
+      return subshells;
    }
 
    public List<Subshell> getSubshells()
    {
-      return subshells;
+      return new ArrayList<>(subshells);
    }
 }
